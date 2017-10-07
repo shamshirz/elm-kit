@@ -1,6 +1,9 @@
 # elm-webpack-starter
 
 
+Slightly slimmer version of [elm-webpack-starter](https://github.com/elm-community/elm-webpack-starter)
+
+
 ### About:
 A simple Webpack setup for writing [Elm](http://elm-lang.org/) apps:
 
@@ -13,19 +16,19 @@ A simple Webpack setup for writing [Elm](http://elm-lang.org/) apps:
 
 ### Do stuff
 
-Work on me
- * Just once
+* Just once
   * `npm install -g elm elm-format yarn`
- * `npm run prep`
- * `npm start`
-
-Build dist for deploy
- * `webpack`
+* Whenever you change a dependency
+  * `npm run prep`
+* When you're working
+  * `npm start`
+* Build a prod version (minified)
+  * `npm run build`
 
 
 ### Tweaks to Original
 
-* Add `prep`, remove the global uninstall reinstall
+* Add `prep`, remove the global uninstall/reinstall
   * Does yarn install and elm package install. Save the lock file
 * Removed rimraf, bootstrap, jquery
 
